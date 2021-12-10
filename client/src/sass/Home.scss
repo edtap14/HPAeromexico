@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+body{
+    height: 100vh;
+    // background-color: fff;
+    background-image: url('../img/Background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $background;
+}
+
+
+@media (max-width: $breakpoint-sm) {
+    body{
+        background-image: none;
+        background-color: $background;
+    }
+}
