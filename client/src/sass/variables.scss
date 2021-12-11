@@ -1,6 +1,23 @@
 $background: #000;
+$morado: #6B63B5;
+$Gradiente: linear-gradient(135deg, #FF0000 0%, #FED482 100%);
+//background: linear-gradient(135deg, #FF0000 0%, #FED482 100%);
 
-$breakpoint-xs: 360px;
+// Heading Font
+$HeadingFontColor: #081F32;
+$fontColorTitle: #fff;
+
+
+//Second Font
+$secondFontColor: #999999;
+
+
+$FontFamily: Open Sans;
+
+ 
+
+
+$breakpoint-xs: 420px;
 $breakpoint-sm: 767px;
 $breakpoint-md: 1023px;
 $breakpoint-lg: 1360px;

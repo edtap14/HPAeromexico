@@ -1,6 +1,8 @@
 @import './variables.scss';
 
 body{
+    padding: 0;
+    margin: 0;
     height: 100vh;
     // background-color: fff;
     background-image: url('../img/Background.png');
@@ -8,12 +10,70 @@ body{
     background-position: center;
     background-size: cover;
     background-color: $background;
+    // display: flex;
+}
+.principal{
+    display: flex;
+    // border: 1px solid red;
+    justify-content: flex-end;
+    margin-right: 133px;
+}
+.divLogo{
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    margin-top: 142px ;
+}
+.logoHarry{
+    width: 193.8px;
+    height: 66px;
+}
+
+.titlediv{
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title{
+    color: $fontColorTitle;
+    font-family: $FontFamily;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 31px;
+}
+
+.footerMovil{
+    display: none
 }
 
 
-@media (max-width: $breakpoint-sm) {
+@media (max-width: $breakpoint-xs) {
     body{
         background-image: none;
         background-color: $background;
     }
+    .principal{
+        display: none
+    }
+    .footerMovil{
+        // border: 1px solid red;
+        align-items:flex-end;
+        justify-content: center;
+        // height: 100vh;
+        display: flex;
+    }
+    .divLogo{
+        // border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px ;
+    }
+    .title{
+        font-size: 18px;
+    }
+    
 }

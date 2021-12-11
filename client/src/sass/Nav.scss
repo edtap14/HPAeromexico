@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+.bFavorito{
+    background-color: $morado;
+    color: #fff;
+    width: 143px;
+    height: 36px;
+    border-radius: 0px 0px 0px 10px;
+    text-transform: uppercase;
+    font-family: $FontFamily;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+.bAgregar{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    font-family: $FontFamily;
+    background-color: $morado;
+    color: #fff;
+    width: 143px;
+    height: 36px;
+    border-radius: 0px 0px 10px 0px;
+    text-transform: uppercase;
+}
+
+img{
+    width: 16px;
+    height: 17.37px;
+    top: 3px;
+    left: 4px; 
+}
+
+
+@media (max-width: $breakpoint-xs) {
+    .bFavorito{
+        border-radius: 10px 0px 0px 0px;
+    }
+ .bAgregar{
+    border-radius: 0px 10px 0px 0px;
+ }
+}
