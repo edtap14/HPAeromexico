@@ -1,0 +1,152 @@
+@import './variables.scss';
+
+.divPrincipal{
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 94px;
+    flex-wrap: wrap;
+}
+
+.wrapper{
+    // border:1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1071px;
+}
+
+.divCards{
+    background-color: $backgroundWhite;
+    width: 515px;
+    height: 265px;
+    border-radius: 16px;
+    margin-bottom: 51px;
+    display: flex;
+}
+
+
+.divColor{ 
+    width:210px;
+    height:265px;
+    background: $GradienteGriffindor;
+    border-radius: 16px 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divwhite{
+    height:265px;
+    width:305px;
+}
+
+.divHead{
+    // border: 1px solid red;
+    margin-top: 22px;
+    margin-left: 25px;
+    height: 19px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    span{
+        color: #999;
+    }
+    button{
+        width: 20px;
+        height: 22px;
+        background-image: url('../img/Rectangle\ 1.jpg');
+        background-size: contain;
+        border: none;
+        background-color: none;
+    }
+}
+.nameCharacter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:23px;
+    span{
+        font-size:30px;
+        font-family: $FontFamily;
+        font-weight: 600;
+    }
+}
+
+.dataCharacter{
+    // border: 1px solid red;
+    display: block;
+    width: 184px;
+    height: 112px;
+    margin-left: 25px;
+    margin-top: 30px;
+    .spantitle{
+        font-size: 18px;
+        color:#374A59;
+        margin: 3px;
+        font-weight: 600;
+    }
+    span{
+    font-size:14px;
+    color: #374A59;
+    font-weight: 400;
+    }
+    span :first-letter{
+        text-transform: uppercase;
+    }
+}
+
+.imgCharacters{
+    width: 169.3px;
+    height: 169.3px;
+    border-radius: 150px;
+}
+
+@media (max-width: $breakpoint-xs){
+    .divPrincipal{
+        margin-top: 46.07;
+        display: inline-block;
+        margin-left: 30px;
+    }
+    .wrapper{
+        width: 290px;
+
+    }
+    .divCards{
+        width: 140px;
+        height: 181px;
+        position: relative;
+    }
+    .divColor{
+        // display: 3px solid blue;
+        height:140px;
+        width:88px;
+        border-radius: 5px 0px 0px 5px;
+        transform: rotate(90deg);
+        position: absolute;
+        top: -27px;
+        left: 26px
+    }
+
+    .divwhite{
+        height:94px;
+        position: absolute;
+        top: 88px;
+        width: 140px;
+        p{
+            display: none
+        }
+        .imgFav{
+            display: none;
+        }
+    }
+
+    .imgCharacters{
+        width:70.8px;
+        height:70.8px;
+        transform: rotate(-90deg);
+    }
+
+}

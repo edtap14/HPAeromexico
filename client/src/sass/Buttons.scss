@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+.butonsDiv{
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.buttonFilter{
+   color: #fff;
+   width: 288px;
+   height: 67px;
+   margin-left: 58.5px;
+   margin-right: 58.5px;
+   margin-top: 64px;
+   border-radius: 4px; 
+   background:$normalButton;
+   border: 4px solid $morado;
+   font-weight: 600;
+   font-family: $FontFamily;
+   font-size: 17px;
+   line-height: 25px;
+   text-align: center;
+}
+
+.buttonFilter:hover{
+    background: $hoverButton
+}
+
+
+
+@media (max-width: $breakpoint-xs){
+    .buttonFilter{
+        width: 140px;
+        height: 42.93px;
+        margin-left: 4.74px;
+        margin-right: 4.74px;
+        margin-top: 24px;
+    }
+}
