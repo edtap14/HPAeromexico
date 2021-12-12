@@ -19,6 +19,21 @@ export default function Cards() {
                 ></img>
               </div>
               <div className="divwhite">
+                <div className="divtitleCel">
+                  <span>{c.name}</span>
+                </div>
+                <div className="divHeadCel">
+                  <span>
+                    {c.alive ? "VIVO" : "FINADO"}
+                    <br></br>
+                  </span>
+                  <span>{c.hogwartsStudent ? " ESTUDIANTE" : " STAFF"}</span>
+                  <button
+                    className="imgFavCel"
+                    alt="fav"
+                    // back={rectangle1}
+                  ></button>
+                </div>
                 <div className="divHead">
                   <span>{c.alive ? "VIVO" : "FINADO"} </span>
                   <span>{c.hogwartsStudent ? "/ ESTUDIANTE" : "/ STAFF"}</span>

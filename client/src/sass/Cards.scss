@@ -97,11 +97,20 @@
         text-transform: uppercase;
     }
 }
+.divtitleCel{
+   display: none;
+}
+.divHeadCel{
+    display: none;
+}
 
 .imgCharacters{
     width: 169.3px;
     height: 169.3px;
     border-radius: 150px;
+}
+.imgFavCel{
+    display:none;
 }
 
 @media (max-width: $breakpoint-xs){
@@ -147,6 +156,47 @@
         width:70.8px;
         height:70.8px;
         transform: rotate(-90deg);
+    }
+    .divHead{
+        display: none
+    }
+    .nameCharacter{
+        display:none
+    }
+    .dataCharacter{
+        display: none
+    }
+    .divtitleCel{
+        width:140px;
+        height:46px;
+        display:flex;
+        text-align: center;
+        justify-content:center;
+        span{
+            font-size:18px;
+            color: #000;
+            font-weight: 600;
+        }
+    }
+    .divHeadCel{
+        display: inline-block;
+        // border: 1px solid red;
+        span{
+            font-size:14px;
+            color: #374A59;
+            margin-left: 5px;
+        }
+        .imgFavCel{
+            display: inline;
+            border: none;
+            // border: 1px solid red;
+            margin-left: 20px;
+            width: 23px;
+            height: 23px;
+            background-image: url('../img/Rectangle\ 1.jpg');
+            background-repeat: no-repeat;
+            background-size: content;
+        }
     }
 
 }
