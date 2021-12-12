@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "../sass/Cards.scss";
-import databaseCharacters from "../json/hp-characters.json";
+import databaseStaff from "../json/hp-staff.json";
 
 export default function Cards() {
   return (
     <div className="divPrincipal">
       <div className="wrapper">
-        {databaseCharacters.map((c) => {
+        {databaseStaff.map((c) => {
           return (
             <div key={c.name} className="divCards">
               <div className={c.house ? c.house : "noHome"}>

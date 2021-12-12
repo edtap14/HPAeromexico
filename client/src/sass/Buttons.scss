@@ -28,6 +28,10 @@
     background: $hoverButton
 }
 
+.buttonFilter:active{
+    background:$activeButton;
+}
+
 
 
 @media (max-width: $breakpoint-xs){

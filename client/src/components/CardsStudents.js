@@ -1,22 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import "../sass/Cards.scss";
-import databaseCharacters from "../json/hp-characters.json";
+import databaseStudents from "../json/hp-students.json";
 
-export default function Cards() {
+// console.log(databaseCharacters);
+
+export default function CardsStudents() {
   return (
     <div className="divPrincipal">
       <div className="wrapper">
-        {databaseCharacters.map((c) => {
+        {databaseStudents.map((c) => {
           return (
             <div key={c.name} className="divCards">
-              <div className={c.house ? c.house : "noHome"}>
+              <div className={c.house}>
                 <img
                   alt="character"
                   className="imgCharacters"
                   src={c.image}
                 ></img>
               </div>
-              <div className={c.alive ? "divwhite" : "divDeath"}>
+              <div className="divwhite">
                 <div className="divtitleCel">
                   <span>{c.name}</span>
                 </div>
@@ -42,7 +44,7 @@ export default function Cards() {
                   ></button>
                 </div>
                 <div className="nameCharacter">
-                  <span>{c.alive ? c.name : "+ " + c.name}</span>
+                  <span>{c.name}</span>
                 </div>
                 <div className="dataCharacter">
                   <p className="spantitle">

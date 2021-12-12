@@ -1,5 +1,9 @@
 @import './variables.scss';
 
+$data: '../json/hp-characters.json';
+
+
+
 .divPrincipal{
     // border: 1px solid red;
     display: flex;
@@ -28,10 +32,48 @@
 }
 
 
-.divColor{ 
+
+.Gryffindor{ 
     width:210px;
     height:265px;
     background: $GradienteGriffindor;
+    border-radius: 16px 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Slytherin{ 
+    width:210px;
+    height:265px;
+    background: $GradienteSlitherin;
+    border-radius: 16px 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Hufflepuff{ 
+    width:210px;
+    height:265px;
+    background: $GradienteHuffelpuff;
+    border-radius: 16px 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Ravenclaw{ 
+    width:210px;
+    height:265px;
+    background: $GradienteRavenclaw;
+    border-radius: 16px 0px 0px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noHome{ 
+    width:210px;
+    height:265px;
+    background:$morado;
     border-radius: 16px 0px 0px 16px;
     display: flex;
     justify-content: center;
@@ -41,6 +83,11 @@
 .divwhite{
     height:265px;
     width:305px;
+}
+.divDeath{
+    height:265px;
+    width:305px;
+    background-color: #CCCCCC;
 }
 
 .divHead{
@@ -128,7 +175,47 @@
         height: 181px;
         position: relative;
     }
-    .divColor{
+    .Gryffindor{
+        // display: 3px solid blue;
+        height:140px;
+        width:88px;
+        border-radius: 5px 0px 0px 5px;
+        transform: rotate(90deg);
+        position: absolute;
+        top: -27px;
+        left: 26px
+    }
+    .Slytherin{
+        // display: 3px solid blue;
+        height:140px;
+        width:88px;
+        border-radius: 5px 0px 0px 5px;
+        transform: rotate(90deg);
+        position: absolute;
+        top: -27px;
+        left: 26px
+    }
+    .Hufflepuff{
+        // display: 3px solid blue;
+        height:140px;
+        width:88px;
+        border-radius: 5px 0px 0px 5px;
+        transform: rotate(90deg);
+        position: absolute;
+        top: -27px;
+        left: 26px
+    }
+    .Ravenclaw{
+        // display: 3px solid blue;
+        height:140px;
+        width:88px;
+        border-radius: 5px 0px 0px 5px;
+        transform: rotate(90deg);
+        position: absolute;
+        top: -27px;
+        left: 26px
+    }
+    .noHome{
         // display: 3px solid blue;
         height:140px;
         width:88px;
@@ -150,6 +237,19 @@
         .imgFav{
             display: none;
         }
+    }
+
+    .divDeath{
+        height:94px;
+            position: absolute;
+            top: 88px;
+            width: 140px;
+            p{
+                display: none
+            }
+            .imgFav{
+                display: none;
+            }
     }
 
     .imgCharacters{

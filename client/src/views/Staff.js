@@ -27,9 +27,7 @@ export default function Home() {
         <Buttons />
       </div>
       <div>
-        <Cards />
-        {/* <CardsStaff />
-        <CardsStudents /> */}
+        <CardsStaff />
       </div>
       <div className="footerMovil">
         <Nav />
