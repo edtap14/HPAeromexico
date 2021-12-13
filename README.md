@@ -24,6 +24,8 @@ $ yarn install
 ````
 $ json-server --watch db.json --port 3001
 ````
+*** IMPORTANTE ***
+El archivo no debe ser manipulado por el usuario. 
 5. En una terminal adicional, iniciamos el servidor de react con el comando:
 ````    
 $ npm start
