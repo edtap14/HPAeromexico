@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../sass/Cards.scss";
 import databaseCharacters from "../json/hp-characters.json";
 
+// console.log(databaseCharacters);
+
 export default function Cards() {
   return (
     <div className="divPrincipal">
