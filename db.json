@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "name": "Edgar",
+      "dateOfBirth": "1987-06-14",
+      "eyeColour": "Negros",
+      "hairColour": "Negro",
+      "gender": "male",
+      "posicion": "hogwartsStudent",
+      "id": 2
+    },
+    {
+      "name": "",
+      "dateOfBirth": "",
+      "eyeColour": "",
+      "hairColour": "",
+      "gender": "",
+      "posicion": "",
+      "id": 3
+    },
+    {
+      "name": "Agustin",
+      "dateOfBirth": "1958-08-28",
+      "eyeColour": "cafes",
+      "hairColour": "brown",
+      "gender": "male",
+      "posicion": "hogwartsStaff",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
